@@ -1,24 +1,26 @@
 {
-  "name" : "raptek/regon-bundle",
-  "description" : "A Symfony2 Bundle for retrieving data from GUS",
-  "type" : "symfony-bundle",
-  "authors" : [{
-    "name" : "Krzysztof Winiarski",
-    "email" : "raptilek@gmail.com"
-  }],
-  "keywords" : [
-    "regob", "gus"
+  "name": "raptek/regon-bundle",
+  "description": "A Symfony2 Bundle for retrieving data from GUS",
+  "type": "symfony-bundle",
+  "authors": [
+    {
+      "name": "Krzysztof Winiarski",
+      "email": "raptilek@gmail.com"
+    }
   ],
-  "license" : [
+  "keywords": [
+    "regon",
+    "gus"
+  ],
+  "license": [
     "MIT"
   ],
-  "require" : {
+  "require": {
     "raptek/regon": "dev-master"
   },
-  "autoload" : {
-    "psr-0" : {
-      "Raptek\\RegonBundle" : ""
+  "autoload": {
+    "psr-4": {
+      "Raptek\\RegonBundle": ""
     }
-  },
-  "target-dir" : "Raptek/RegonBundle"
+  }
 }

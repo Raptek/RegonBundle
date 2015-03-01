@@ -1,1 +1,13 @@
+parameters:
+    raptek.regon.adapter.curl.class:  Raptek\Regon\Adapter\Curl\CurlAdapter
+    raptek.regon.client.class:  Raptek\Regon\Client
+
 services:
+    raptek.regon.adapter.curl:
+        class:  %raptek.regon.adapter.curl.class%
+
+    raptek.regon:
+        class:  %raptek.regon.client.class%
+        arguments:
+            - %raptek.regon.api_key%
+            - %raptek.regon.adapter%

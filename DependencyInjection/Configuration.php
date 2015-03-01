@@ -22,7 +22,8 @@ class Configuration implements ConfigurationInterface
 
         $rootNode
             ->children()
-                ->scalarNode('api_key')->cannotBeEmpty()->isRequired()->end()
+                ->scalarNode('api_key')->isRequired()->cannotBeEmpty()->end()
+                ->scalarNode('adapter')->defaultValue('raptek.regon.adapter.curl')->end()
             ->end()
         ;
 
