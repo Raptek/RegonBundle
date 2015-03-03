@@ -17,11 +17,16 @@
   ],
   "require": {
     "php-curl-class/php-curl-class": "dev-master",
-    "raptek/regon": "dev-master"
+    "raptek/regon": "0.1.0"
   },
   "autoload": {
     "psr-4": {
       "Raptek\\RegonBundle\\": ""
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "0.2-dev"
     }
   }
 }
