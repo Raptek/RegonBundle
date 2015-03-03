@@ -16,6 +16,7 @@
     "MIT"
   ],
   "require": {
+    "php-curl-class/php-curl-class": "dev-master",
     "raptek/regon": "dev-master"
   },
   "autoload": {
