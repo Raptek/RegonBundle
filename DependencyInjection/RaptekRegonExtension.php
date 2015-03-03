@@ -24,6 +24,7 @@ class RaptekRegonExtension extends Extension
 
         $container->setParameter('raptek.regon.api_key', $config['api_key']);
         $container->setParameter('raptek.regon.adapter', $config['adapter']);
+        $container->setParameter('raptek.regon.url', $config['url']);
 
         $loader = new Loader\YamlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
         $loader->load('services.yml');

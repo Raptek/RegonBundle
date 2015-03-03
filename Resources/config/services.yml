@@ -5,6 +5,8 @@ parameters:
 services:
     raptek.regon.adapter.curl:
         class:  %raptek.regon.adapter.curl.class%
+        arguments:
+            - %raptek.regon.url%
 
     raptek.regon:
         class:  %raptek.regon.client.class%

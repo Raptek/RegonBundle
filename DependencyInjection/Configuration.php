@@ -24,6 +24,7 @@ class Configuration implements ConfigurationInterface
             ->children()
                 ->scalarNode('api_key')->isRequired()->cannotBeEmpty()->end()
                 ->scalarNode('adapter')->defaultValue('raptek.regon.adapter.curl')->end()
+                ->scalarNode('url')->defaultValue('https://wyszukiwarkaregon.stat.gov.pl/wsBIR/UslugaBIRzewnPubl.svc')->end()
             ->end()
         ;
 
