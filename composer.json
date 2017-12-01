@@ -16,8 +16,8 @@
     "MIT"
   ],
   "require": {
-    "php-curl-class/php-curl-class": "dev-master",
-    "raptek/regon": "0.1.0"
+    "php" : ">=5.4",
+    "raptek/regon": "0.2.0"
   },
   "autoload": {
     "psr-4": {
@@ -26,7 +26,7 @@
   },
   "extra": {
     "branch-alias": {
-      "dev-master": "0.2-dev"
+      "dev-master": "0.3-dev"
     }
   }
 }
